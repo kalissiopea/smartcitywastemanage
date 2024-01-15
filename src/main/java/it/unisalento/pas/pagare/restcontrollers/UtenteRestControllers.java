@@ -63,7 +63,7 @@ public class UtenteRestControllers {
         newUtente.setCard(utenteDTO.getCard());
         //salviamo il nuovo utente con l'id aggiornato nel database
         newUtente = utenteRepository.save(newUtente);
-        System.out.println("L'Id del nuovo utente è: " + newUtente.getId());
+        System.out.println("L'Id del nuovo user è: " + newUtente.getId());
         return utenteDTO;
     }
 
